@@ -1,29 +1,39 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~
-VARIABLES
-~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-$color-primary: #0749AA;
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ VARIABLES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+$color-primary: #747776;
+$color-primary-dark: #424242;
+$color-primary-lig: #dfdfdf;
+$color-secondary: #67928c;
+$basick-red: #ea7a7a;
+$basick-green: #67928c;
+$color-text: $color-primary;
+$color-text-dark: $color-primary-dark;
 
 :root {
 	/*font-family*/
-	--fm-1: "Roboto Condensed", sans-serif;
+	--fm-1: "Manrope", sans-serif;
 
 	/*colors*/
 	--basic-black: #000;
 	--basick-dark: #333;
 	--basick-white: #fff;
-	
+	--basick-red: #{$basick-red};
+	--basick-green: #{$basick-green};
+
 	--color-primary: #{$color-primary};
+	--color-primary-dark: #{$color-primary-dark};
+	--color-primary-lig: #{$color-primary-lig};
+	--color-secondary: #{$color-secondary};
+	--color-text: #{$color-text};
+	--color-text-dark: #{$color-text-dark};
 }
 
 //breakpoints
 $desctop: 1920;
 $desctop-mid: 1450;
-$desctop-min: 1170;
-$table: 970;
+$desctop-min: 1230;
+$table: 1024;
 $mobile: 768;
 $tel: 480;
 
 /***********************Main*/
 $duration: 0.3s;
-

@@ -1,0 +1,280 @@
+/*==================== MOLECULES ====================*/
+/*b-input*/
+.b-input {
+	$this: &;
+	--air: 0 0 20px;
+	--pl: #{getEm(28, 14)};
+	--pr: #{getEm(28, 14)};
+	--pdT: 18px var(--pl) #{getEm(28, 14)};
+	--h: 51px;
+	--fz: 14px;
+
+	position: relative;
+	display: inline-flex;
+	justify-content: space-between;
+	margin: var(--air);
+
+	&__input {
+		position: relative;
+		width: 100%;
+		font-size: var(--fz);
+
+		input:focus,
+		textarea:focus {
+			& ~ #{$this}__ic svg {
+				fill: var(--color-primary);
+			}
+		}
+
+		input,
+		textarea {
+			width: 100%;
+			color: var(--color-text-dark);
+			border-radius: calc(var(--h) / 2);
+			background-color: #eae7e3;
+			transition: all $duration;
+
+			&::placeholder {
+				color: #b3b3b3;
+			}
+		}
+
+		input {
+			padding: 0 var(--pr) 0 var(--pl);
+			height: var(--h);
+		}
+
+		textarea {
+			padding: var(--pdT);
+			min-height: 98px;
+			border-radius: 50px;
+		}
+	}
+
+	&__ic {
+		position: absolute;
+		top: 50%;
+		right: getEm(21, 14);
+		width: getEm(18, 14);
+		height: getEm(18, 14);
+		transform: translateY(-50%);
+
+		svg {
+			fill: #242424;
+			max-height: 100%;
+			transition: fill $duration;
+		}
+	}
+
+	textarea ~ &__ic {
+		top: 23px;
+		transform: none;
+	}
+
+	@include desctop-mid {
+		--air: 0 0 20px;
+		--h: 45px;
+		--pl: #{getEm(32, 14)};
+		--pr: #{getEm(40, 14)};
+		--pdT: 16px var(--pl) 16px;
+
+		&__ic {
+			right: getEm(18, 14);
+		}
+	}
+
+	@include mobile {
+		--air: 0 0 13px;
+		--pl: #{getEm(29, 12)};
+		--pr: #{getEm(39, 12)};
+		--pdT: 19px var(--pl) 16px;
+		--h: 38px;
+		--fz: 12px;
+
+		&__input {
+			textarea {
+				min-height: 104px;
+				border-radius: 20px;
+			}
+		}
+
+		&__ic {
+			right: getEm(18, 12);
+		}
+	}
+}
+
+/*firm info*/
+.firm-info {
+	$this: &;
+	display: inline-flex;
+	line-height: (19/14);
+
+	@at-root a#{&} {
+		transition: all $duration;
+
+		&:hover {
+			color: var(--basick-green);
+
+			#{$this}__ic {
+				fill: currentColor;
+			}
+		}
+	}
+
+	&__ic {
+		display: inline-block;
+		margin-top: -0.2em;
+		margin-right: getEm(9, 14);
+		max-width: getEm(23, 14);
+		max-height: getEm(23, 14);
+		fill: var(--color-primary);
+	}
+}
+
+/*msgr*/
+.msgr {
+	$this: &;
+	display: flex;
+	align-items: center;
+
+	&__link {
+		flex-shrink: 0;
+		display: block;
+		margin-left: 6px;
+		fill: var(--color-primary);
+		fill-opacity: 1;
+		transition: transform $duration;
+
+		&:not(#{$this}__link--phone):hover {
+			transform: scale(1.1);
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		svg {
+			display: block;
+			width: 25px;
+			height: 25px;
+		}
+
+		&--phone {
+			flex: 1;
+			flex-shrink: 1;
+			position: relative;
+			margin-left: getEm(10, 14);
+			align-self: center;
+			height: auto;
+			transition: all $duration;
+
+			b {
+				font-weight: 500;
+				font-size: getEm(18, 14);
+				color: var(--color-primary-dark);
+				transition: inherit;
+			}
+
+			&:hover {
+				color: var(--basick-green);
+
+				b {
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+.sci-link {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	fill: var(--color-primary);
+	transition: fill $duration;
+
+	&:hover {
+		fill: var(--basick-green);
+	}
+
+	svg,
+	img {
+		max-height: 100%;
+	}
+
+	&--insta {
+		fill: #5a5959;
+	}
+
+	&--youtube {
+		--color-secondary: #242424;
+	}
+}
+
+/*hamburger*/
+.hamburger {
+	$this: &;
+	position: relative;
+	width: 25px;
+	height: 25px;
+	color: var(--color-primary);
+
+	span {
+		top: 50%;
+		display: block;
+		transition: transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.15s, background-color 0s linear 75ms;
+	}
+
+	&.active span {
+		transition: transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s, background-color 0s linear 0.15s;
+		transform: rotate(90deg);
+		background-color: transparent !important;
+	}
+
+	&.active span::after {
+		bottom: 0 !important;
+		transition: bottom 75ms ease-out 0.1s, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.15s;
+		transform: rotate(45deg);
+	}
+	&.active span::before {
+		top: 0 !important;
+		transition: top 75ms ease-out 0.1s, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.15s;
+		transform: rotate(-45deg);
+	}
+
+	span,
+	span::before,
+	span:after {
+		position: absolute;
+		height: 2px;
+		width: 100%;
+		background-color: currentColor;
+		transition-timing-function: eafse;
+		transition-duration: 0.15s;
+		transition-property: transform;
+		border-radius: 3px;
+	}
+
+	span::before,
+	span::after {
+		display: block;
+		content: "";
+	}
+
+	span::before {
+		top: -7px;
+		transition: top 75ms ease-in 75ms, transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+	}
+
+	span::after {
+		bottom: -7px;
+		transition: bottom 75ms ease-in 75ms, transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+	}
+}
+
+/*logo*/
+.logo {
+	display: inline-block;
+	max-width: 285px;
+}

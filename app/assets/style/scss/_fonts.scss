@@ -9,5 +9,10 @@
 	}
 }
 
-@include font-face(Montserrat, 400, "./../../fonts/", Montserrat-Regular);
-
+@include font-face(Manrope, 200, "./../../fonts/", "Manrope-ExtraLight");
+@include font-face(Manrope, 300, "./../../fonts/", "Manrope-Light");
+@include font-face(Manrope, 400, "./../../fonts/", "Manrope-Regular");
+@include font-face(Manrope, 500, "./../../fonts/", "Manrope-Medium");
+@include font-face(Manrope, 600, "./../../fonts/", "Manrope-Semibold");
+@include font-face(Manrope, 700, "./../../fonts/", "Manrope-Bold");
+@include font-face(Manrope, 800, "./../../fonts/", "Manrope-ExtraBold");

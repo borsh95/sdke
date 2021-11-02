@@ -1,3 +1,391 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~
-HEADER
-~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+	font-size: 14px;
+	background: #ffffff;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+	&__container {
+		display: flex;
+		color: var(--color-primary);
+	}
+
+	/*header sidebar*/
+	&__sidebar {
+		display: flex;
+		align-items: center;
+		padding: 10px 20px 10px 0;
+	}
+
+	&__logo {
+		max-width: getEm(285, 14);
+	}
+
+	/*header body*/
+	&__body {
+		flex: 1;
+		padding-top: getEm(21, 14);
+	}
+
+	/*header top*/
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		justify-content: space-between;
+		column-gap: 10px;
+	}
+
+	/*header bottom*/
+	&__bottom {
+		display: flex;
+		align-items: flex-start;
+		padding-top: 11px;
+
+		&-right {
+			margin-left: auto;
+			padding-left: 20px;
+		}
+	}
+
+	/*logo*/
+	&__logo {
+		max-width: getEm(285, 14);
+	}
+
+	/*burger*/
+	&__burger {
+		&-info {
+			display: none;
+			flex-direction: column;
+			padding: getEm(13, 14) 10px 0 3em;
+
+			.firm-info {
+				margin-bottom: getEm(14, 12);
+			}
+
+			.header__callback {
+				display: inline-flex;
+				--fz: #{getEm(10, 14)};
+				margin-top: getEm(25, 10);
+			}
+		}
+	}
+
+	/*header menu*/
+	&__menu {
+		flex-wrap: nowrap;
+
+		& > .menu__item {
+			margin-right: getEm(13, 14);
+
+			&.active,
+			&:hover {
+				& > .menu__link {
+					&::before {
+						transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+						opacity: 1;
+					}
+				}
+			}
+
+			&.menu__item--drop {
+				& > .menu__link::before {
+					text-shadow: none;
+				}
+			}
+
+			&:first-child {
+				& > .menu__link {
+					font: 600 1em var(--fm-1);
+					color: var(--color-text-dark);
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			& > .menu__link {
+				padding: getEm(10, 14) getEm(5, 14) getEm(33, 14);
+				text-transform: uppercase;
+
+				&::before {
+					content: attr(data-hover);
+					position: absolute;
+					color: currentColor;
+					opacity: 0;
+					text-shadow: 0 0 1px rgba(116, 119, 118, 0.3);
+					transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+					transition: transform 0.4s, opacity 0.4s;
+					pointer-events: none;
+				}
+			}
+
+			& > .menu__submenu {
+				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1), inset 0px 30px 30px -30px rgba(0, 0, 0, 0.1);
+				&::before {
+					content: "";
+					position: absolute;
+					right: -10px;
+					bottom: 100%;
+					left: -10px;
+					z-index: 1;
+					display: block;
+					height: 13px;
+					background-color: #fff;
+				}
+			}
+		}
+
+		.menu__link {
+			padding: getEm(17, 16) 10px getEm(16, 16) getEm(37, 16);
+		}
+
+		ul ul .menu__link {
+			padding-left: getEm(60, 16) !important;
+		}
+
+		& > .menu__item > .menu__submenu {
+			font-size: getEm(16, 14);
+		}
+
+		ul ul {
+			color: #bcbcbc;
+			background-color: var(--color-primary);
+		}
+
+		.menu__item-toggle {
+			margin-top: -1.8em;
+			margin-right: 0.3em;
+			color: var(--color-primary-dark);
+		}
+	}
+
+	&__callback {
+		--h: #{getEm(40, 13)};
+		--fz: #{getEm(13, 14)};
+		margin-right: 17px;
+		min-width: getEm(200, 13);
+	}
+
+	&__hamburger {
+		display: none;
+		margin-left: 17px;
+	}
+
+	@include desctop-min {
+		font-size: 12px;
+
+		&__logo {
+			max-width: getEm(250, 14);
+		}
+
+		&__menu {
+			.menu__item-toggle {
+				margin-top: -1.85em;
+			}
+		}
+	}
+
+	@include table {
+		&__container {
+			align-items: center;
+			padding: 13px 20px 12px;
+		}
+
+		&__sidebar {
+			padding: 0 20px 0 0;
+		}
+
+		&__body {
+			padding: 0;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		&__bottom {
+			padding: 0;
+
+			&-right {
+				padding-left: 7px;
+			}
+		}
+
+		&__logo {
+			max-width: 200px;
+		}
+
+		&__burger {
+			position: absolute;
+			top: 100%;
+			right: 0;
+			z-index: 90;
+			padding: 15px 0 25px;
+			width: 300px;
+			font-size: 14px;
+			background-color: #fff;
+			opacity: 0;
+			pointer-events: none;
+			transform: translateX(-30px);
+			overflow-y: auto;
+			box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+			transition: transform 0.3s, opacity 0.3s;
+
+			&.open {
+				pointer-events: all;
+				opacity: 1;
+				transform: translateX(0px);
+			}
+
+			&-inner {
+				height: 100%;
+			}
+
+			&-info {
+				display: inline-flex;
+			}
+		}
+
+		&__menu {
+			flex-direction: column;
+			align-items: stretch;
+
+			ul {
+				width: auto !important;
+				box-shadow: none !important;
+			}
+
+			& > .menu__item {
+				margin: 0;
+
+				.menu__link {
+					padding: getEm(8, 14) getEm(13, 14) getEm(7, 14) 1.45em;
+				}
+
+				& > .menu__link {
+					padding-left: getEm(42, 14);
+				}
+
+				.menu__submenu {
+					max-width: none;
+					font-size: inherit;
+				}
+
+				& > .menu__submenu {
+					&::before {
+						display: none;
+					}
+				}
+			}
+
+			.menu__item--drop {
+				flex-wrap: wrap;
+
+				.menu__item-toggle {
+					margin-top: -#{getEm(5, 16)};
+					margin-left: getEm(20, 14);
+				}
+
+				& > .menu__submenu {
+					padding: 0;
+					height: 0;
+					overflow: hidden;
+					opacity: 0;
+					transition: none;
+				}
+
+				& > .menu__link {
+					width: auto;
+					flex: 1;
+				}
+
+				&.active > .menu__submenu {
+					opacity: 1;
+					height: auto;
+					overflow: hidden;
+					transition: opacity $duration;
+				}
+			}
+
+			.menu__link {
+				padding: getEm(10, 16) getEm(10, 16) getEm(10, 16) getEm(30, 16);
+				width: 100%;
+			}
+
+			.menu__submenu {
+				.menu__link {
+					padding-left: getEm(40, 16);
+				}
+
+				.menu__submenu {
+					.menu__link {
+						padding-left: getEm(50, 16);
+					}
+				}
+			}
+
+			ul {
+				position: static;
+			}
+		}
+
+		&__hamburger {
+			display: block;
+		}
+
+		.msgr {
+			&:nth-last-of-type(2) {
+				display: none;
+			}
+
+			&__link {
+				&--phone {
+					display: none;
+				}
+			}
+		}
+
+		.sci-link {
+			width: 25px;
+			height: 25px;
+		}
+
+		&__callback,
+		&__firm-info {
+			display: none;
+		}
+	}
+
+	@include mobile {
+		&__logo {
+			max-width: 156px;
+		}
+		&__callback {
+			display: none;
+		}
+	}
+
+	@include to(380) {
+		&__logo {
+			max-width: 120px;
+		}
+
+		.msgr {
+			&__link {
+				svg {
+					height: 23px;
+					width: 23px;
+				}
+			}
+		}
+
+		.sci-link {
+			width: 23px;
+			height: 23px;
+		}
+	}
+}

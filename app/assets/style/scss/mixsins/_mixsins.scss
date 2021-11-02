@@ -11,15 +11,15 @@
 }
 
 @mixin desctop-min {
-    @media (max-width: #{$desctop-min}px) {
-        @content;
-    }
+	@media (max-width: #{$desctop-min}px) {
+		@content;
+	}
 }
 
 @mixin table {
-    @media (max-width: #{$table}px) {
-        @content;
-    }
+	@media (max-width: #{$table}px) {
+		@content;
+	}
 }
 
 @mixin table-min {
@@ -29,19 +29,31 @@
 }
 
 @mixin mobile {
-    @media (max-width: #{$mobile}px) {
-        @content;
-    }
+	@media (max-width: #{$mobile}px) {
+		@content;
+	}
 }
 
 @mixin tel {
-    @media (max-width: #{$tel}px) {
-        @content;
-    }
+	@media (max-width: #{$tel}px) {
+		@content;
+	}
+}
+
+@mixin from($min_width) {
+	@media screen and (min-width: #{$min_width}px) {
+		@content;
+	}
+}
+
+@mixin to($max_width) {
+	@media screen and (max-width: #{$max_width}px) {
+		@content;
+	}
 }
 
 @function rubberSize($minW, $maxW, $minScrin, $maxScrin) {
-	@return calc(#{$minW}px + (#{$maxW} - #{$minW})*((100vw - #{$minScrin}px)/(#{$maxScrin} - #{$minScrin})));
+	@return calc(#{$minW}px + (#{$maxW} - #{$minW}) * ((100vw - #{$minScrin}px) / (#{$maxScrin} - #{$minScrin})));
 }
 
 @function getEm($childSize, $parentSize) {
@@ -49,5 +61,5 @@
 }
 
 @function getPr($childSize, $parentSize) {
-	@return #{$childSize/$parentSize*100%};
-}	
+	@return #{$childSize/$parentSize * 100%};
+}

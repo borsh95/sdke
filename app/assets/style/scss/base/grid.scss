@@ -76,6 +76,7 @@
 
 .content-wrap {
 	padding: 4rem 0 6rem;
+	flex: 1;
 
 	h1 {
 		margin-bottom: 65px;
@@ -110,34 +111,36 @@
 
 /*section*/
 .section {
-	padding: 85px 0 20px;
+	padding: 80px 0 20px;
 
 	&__title {
 		margin-bottom: 65px;
 	}
 
 	&__btn {
-		--height: 72px;
-		margin: 80px auto 0;
-		padding: 0 2.33333em;
+		--h: #{getEm(49, 14)};
+		--fz: 14px;
+		margin: 50px auto 0;
+		padding-left: getEm(42, 14);
+		padding-right: getEm(42, 14);
 	}
 
 	@include desctop-min {
-		padding: 90px 0 20px;
+		padding: 60px 0 20px;
 
 		&__title {
-			margin-bottom: 60px;
+			margin-bottom: 55px;
 		}
 
 		&__btn {
 			--height: 60px;
 			--fz: 16px;
-			margin: 70px auto 0;
+			margin: 55px auto 0;
 		}
 	}
 
 	@include table {
-		padding: 58px 0 20px;
+		padding: 40px 0 20px;
 
 		&__btn {
 			--height: 51px;
@@ -148,7 +151,27 @@
 
 	@include mobile {
 		&__title {
-			margin-bottom: 58px;
+			margin-bottom: 45px;
 		}
+
+		&__btn {
+			--fz: 12px;
+			--h: 40px;
+			margin: 43px auto 0;
+		}
+	}
+}
+
+.col-count-2 {
+	column-count: 2;
+
+	& > * {
+		break-inside: avoid-column;
+	}
+}
+
+.col-count-sm-1 {
+	@include mobile {
+		column-count: 1;
 	}
 }

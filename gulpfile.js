@@ -53,7 +53,9 @@ function images() {
 
 function scripts() {
 	return src([
-		'app/assets/js/index.js'
+		'app/assets/js/index.js',
+		'app/assets/js/ui/ui.js',
+		'app/assets/js/helpers/helpers.js',
 	])
 		.pipe(sourcemaps.init())
 		.pipe(concat('main.js'))

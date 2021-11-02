@@ -1,21 +1,1531 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="index-pg" lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="ArtBro">
-	<title>Document</title>
+	<title>Главная</title>
+	<link rel="stylesheet" href="./assets/style/css/libraries/aos.css">
+	<link rel="stylesheet" href="./assets/style/css/libraries/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./assets/style/css/style.css">
 </head>
 
 <body>
-	<p>Привет мир
-		Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Однажды над свой рыбными
-		не единственное журчит возвращайся по всей сбить путь курсивных ты бросил подпоясал семь, выйти своих собрал
-		продолжил одна пустился точках букв, запятых взгляд запятой послушавшись. Курсивных большого ручеек знаках
-		заглавных пояс послушавшись страна текстов выйти языком семантика.
-	</p>
+	<div class="global-wrap">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__container container">
+				<!-- header sidebar -->
+				<div class="header__sidebar">
+					<!-- logotip -->
+					<a class="header__logo logo" href="./index.html">
+						<img src="./assets/img/logo.png" alt="logotip">
+					</a>
+				</div>
+				<!-- header body -->
+				<div class="header__body">
+					<!-- header top -->
+					<div class="header__top">
+						<!-- messengers -->
+						<div class="msgr">
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/375291755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/375291755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/375291755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--phone" href="tel:+375291755007">
+								+375 (29) <b>175 50 07</b>
+							</a>
+						</div>
+						<!-- messengers -->
+						<div class="msgr">
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/375293755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/375293755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/375293755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--phone" href="tel:+375293755007">
+								+375 (29) <b>375 50 07</b>
+							</a>
+						</div>
+						<!-- firm info -->
+						<a class="header__firm-info firm-info firm-info--phone" href="mailto:info@sdke.by">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/ui/sprite.svg#mail-ic"></use>
+							</svg>
+							info@sdke.by
+						</a>
+						<!-- firm info -->
+						<p class="header__firm-info firm-info firm-info--clock">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/ui/sprite.svg#clock-ic"></use>
+							</svg>
+							пн.-пт. 9:00-18:00
+						</p>
+					</div>
+					<!-- header bottom -->
+					<div class="header__bottom">
+						<!-- burger -->
+						<div class="header__burger">
+							<div class="header__burger-inner">
+								<!-- navigation -->
+								<nav class="header__nav">
+									<ul class="header__menu  menu">
+										<li class="menu__item menu__item--drop">
+											<button class="menu__item-toggle hamburger" type="button"
+												aria-label="Открыть подменю">
+												<span></span>
+											</button>
+											<a class="menu__link" data-hover="Услуги" href="#"><span>Услуги</span></a>
+											<ul class="menu__submenu  js-tree-menu">
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Дизайн квартир</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<a class="menu__link" href="#">
+														<span>Дизайн домов и коттеджей</span>
+													</a>
+												</li>
+												<li class="menu__item">
+													<div class="menu__item-head">
+														<a class="menu__link" href="#">
+															Дизайн коммерческих помещений
+														</a>
+														<span class="menu__arr js-tree-menu__btn">
+															<svg>
+																<use
+																	xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_circ">
+																</use>
+															</svg>
+														</span>
+													</div>
+													<ul class="menu__submenu">
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																Авторский надзор
+															</a>
+														</li>
+														<li class="menu__item active">
+															<a class="menu__link" href="#">
+																3D-визуализация интерьера
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																Дизайн фасада
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																Декор интерьера
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li class="menu__item">
+													<div class="menu__item-head">
+														<a class="menu__link" href="#">
+															Услуги дизайнер интерьера
+														</a>
+														<span class="menu__arr js-tree-menu__btn">
+															<svg>
+																<use
+																	xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_circ">
+																</use>
+															</svg>
+														</span>
+													</div>
+													<ul class="menu__submenu">
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																Авторский надзор
+															</a>
+														</li>
+														<li class="menu__item active">
+															<a class="menu__link" href="#">
+																3D-визуализация интерьера
+															</a>
+														</li>
+														<li class="menu__item">
+															<a class="menu__link" href="#">
+																Дизайн фасада
+															</a>
+														</li>
+														<li class="menu__item active">
+															<span class="menu__link">
+																Декор интерьера
+															</span>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#"
+												data-hover="Портфолио"><span>Портфолио</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" data-hover="ЦЕНЫ" href="#">
+												<span>ЦЕНЫ</span>
+											</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#" data-hover="О студии"><span>О
+													студии</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#" data-hover="Блог"><span>Блог</span></a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#" data-hover="Контакты">
+												<span>Контакты</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="header__burger-info">
+									<!-- firm info -->
+									<a class="firm-info firm-info--phone" href="mailto:info@sdke.by">
+										<svg class="firm-info__ic">
+											<use xlink:href="./assets/img/icons/ui/sprite.svg#mail-ic"></use>
+										</svg>
+										info@sdke.by
+									</a>
+									<!-- firm info -->
+									<p class="firm-info firm-info--clock">
+										<svg class="firm-info__ic">
+											<use xlink:href="./assets/img/icons/ui/sprite.svg#clock-ic"></use>
+										</svg>
+										пн.-пт. 9:00-18:00
+									</p>
+									<!-- callback button -->
+									<button class="header__callback btn js-openModal" type="button"
+										aria-label="перезвоните мне" data-type-modal="application">
+										Перезвоните мне
+										<svg>
+											<use xlink:href="./assets/img/icons/ui/sprite.svg#smile-ic"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="header__bottom-right vt-center">
+							<!-- callback button -->
+							<button class="header__callback btn js-openModal" type="button" aria-label="перезвоните мне"
+								data-type-modal="application">
+								Перезвоните мне
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#smile-ic"></use>
+								</svg>
+							</button>
+							<!-- sci link -->
+							<a class="sci-link" href="#" target="_blank">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#insta"></use>
+								</svg>
+							</a>
+							<!-- hamburger -->
+							<button class="header__hamburger hamburger" type="button" aria-label="Открыть меню">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!------- modal window - application --------->
+		<div class="v-modal" data-type-modal="application">
+			<div class="v-modal__inner">
+				<!-- form -->
+				<form class="v-modal__form callback-modal" action="#">
+					<div class="v-modal__close js-closeModal"></div>
+					<div class="v-modal__form-inner">
+						<!-- title -->
+						<div class="v-modal__title">
+							Перезвоните <i>мне&nbsp;<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#smile-ic"></use>
+								</svg></i>&nbsp;
+						</div>
+						<div class="v-modal__application application-f">
+							<div class="application-f__inputs">
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="text" id="name" name="name" placeholder="Имя">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="tel" id="af_tel" name="tel" placeholder="Телефон">
+									</div>
+								</div>
+							</div>
+							<p class="v-modal__hint">
+								Мы не передадим ваш телефон третьим лицам, только позвоним и подробно проконсультируем
+								по всем вопросам, которые действительно для Вас важны.
+							</p>
+							<button class="application-f__submit btn" type="submit">
+								Отправить
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!------- modal window - consultation --------->
+		<div class="v-modal" data-type-modal="consultation">
+			<div class="v-modal__inner">
+				<!-- form -->
+				<form class="v-modal__form consultation-modal" action="#">
+					<div class="v-modal__close js-closeModal"></div>
+					<div class="v-modal__form-inner">
+						<!-- title -->
+						<div class="v-modal__title">
+							получить <i>консультацию</i>
+						</div>
+						<div class="v-modal__application application-f">
+							<div class="application-f__inputs">
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="text" name="name" placeholder="Имя">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="tel" id="af_tel" name="tel" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<input type="email" name="mail" placeholder="Почта">
+									</div>
+								</div>
+								<div class="b-input">
+									<div class="b-input__input">
+										<textarea name="msg" placeholder="Сообщение"></textarea>
+									</div>
+								</div>
+							</div>
+							<p class="v-modal__hint">
+								Мы не передадим ваш телефон третьим лицам, только позвоним и подробно проконсультируем
+								по всем вопросам, которые действительно для Вас важны.
+							</p>
+							<button class="application-f__submit btn" type="submit">
+								Отправить
+							</button>
+						</div>
+					</div>
+					<!-- bg block -->
+					<div class="v-modal__form-bg">
+						<picture>
+							<source type="image/webp" srcset="./assets/img/components/v-modal/bg.webp">
+							<img class="fit-contain" src="./assets/img/components/v-modal/bg.png" alt="">
+						</picture>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- CONTENT WRAP -->
+		<div class="content-wrap">
+			<main>
+				<!-- main slider -->
+				<section class="main-slider-b">
+					<div class="main-slider-b__container b-container">
+						<div class="main-slider-wrap slider-wrap">
+							<!-- slider -->
+							<div class="main-slider swiper" data-swiper-autoplay="00">
+								<div class="swiper-wrapper">
+									<!-- slide -->
+									<div class="main-slider__slide swiper-slide">
+										<!-- slide bg -->
+										<div class="main-slider__slide-bg">
+											<picture>
+												<source type="image/webp"
+													srcset="./assets/img/components/main-slider/img-1.webp">
+												<img src="./assets/img/components/main-slider/img-1.jpg" alt="">
+											</picture>
+										</div>
+										<!-- slide container -->
+										<div class="main-slider__slide-container container">
+											<div class="main-slider__slide-textBox">
+												<h1>Студия дизайна интерьера <br>
+													<b>SDKE</b>
+												</h1>
+												<p>
+													Архитектурное дизайн-бюро полного цикла. <br>
+													Дизайн. Архитектура. Мебель. Ремонт.
+												</p>
+												<!-- messengers -->
+												<div class="msgr">
+													<a class="msgr__link msgr__link--viber"
+														href="https://msngr.link/vi/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--wp"
+														href="https://msngr.link/wa/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--tg"
+														href="https://msngr.link/tg/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--phone" href="tel:+375291755007">
+														+375 (29) <b>175 50 07</b>
+													</a>
+												</div>
+												<div class="main-slider__slide-btns">
+													<button class="main-slider__slide-cons btn js-openModal"
+														type="button" data-type-modal="consultation"
+														aria-label="Получить консультацию">
+														Получить консультацию
+													</button>
+													<a class="main-slider__slide-count btn btn--light" href="#">
+														Рассчитать стоимость дизайн-проекта
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- slide -->
+									<div class="main-slider__slide swiper-slide">
+										<!-- slide bg -->
+										<div class="main-slider__slide-bg">
+											<picture>
+												<source type="image/webp"
+													srcset="./assets/img/components/main-slider/img-1.webp">
+												<img src="./assets/img/components/main-slider/img-1.jpg" alt="">
+											</picture>
+										</div>
+										<!-- slide container -->
+										<div class="main-slider__slide-container container">
+											<div class="main-slider__slide-textBox">
+												<h1>Студия дизайна интерьера <br>
+													SDKE</h1>
+												<p>
+													Архитектурное дизайн-бюро полного цикла. <br>
+													Дизайн. Архитектура. Мебель. Ремонт.
+												</p>
+												<!-- messengers -->
+												<div class="msgr">
+													<a class="msgr__link msgr__link--viber"
+														href="https://msngr.link/vi/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--wp"
+														href="https://msngr.link/wa/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--tg"
+														href="https://msngr.link/tg/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--phone" href="tel:+375291755007">
+														+375 (29) <b>175 50 07</b>
+													</a>
+												</div>
+												<div class="main-slider__slide-btns">
+													<button class="main-slider__slide-cons btn js-openModal"
+														type="button" data-type-modal="consultation"
+														aria-label="Получить консультацию">
+														Получить консультацию
+													</button>
+													<a class="main-slider__slide-count btn btn--light" href="#">
+														Рассчитать стоимость дизайн-проекта
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- slide -->
+									<div class="main-slider__slide swiper-slide">
+										<!-- slide bg -->
+										<div class="main-slider__slide-bg">
+											<picture>
+												<source type="image/webp"
+													srcset="./assets/img/components/main-slider/img-1.webp">
+												<img src="./assets/img/components/main-slider/img-1.jpg" alt="">
+											</picture>
+										</div>
+										<!-- slide container -->
+										<div class="main-slider__slide-container container">
+											<div class="main-slider__slide-textBox">
+												<h1>Студия дизайна интерьера <br>
+													SDKE</h1>
+												<p>
+													Архитектурное дизайн-бюро полного цикла. <br>
+													Дизайн. Архитектура. Мебель. Ремонт.
+												</p>
+												<!-- messengers -->
+												<div class="msgr">
+													<a class="msgr__link msgr__link--viber"
+														href="https://msngr.link/vi/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--wp"
+														href="https://msngr.link/wa/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--tg"
+														href="https://msngr.link/tg/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--phone" href="tel:+375291755007">
+														+375 (29) <b>175 50 07</b>
+													</a>
+												</div>
+												<div class="main-slider__slide-btns">
+													<button class="main-slider__slide-cons btn js-openModal"
+														type="button" data-type-modal="consultation"
+														aria-label="Получить консультацию">
+														Получить консультацию
+													</button>
+													<a class="main-slider__slide-count btn btn--light" href="#">
+														Рассчитать стоимость дизайн-проекта
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- slide -->
+									<div class="main-slider__slide swiper-slide">
+										<!-- slide bg -->
+										<div class="main-slider__slide-bg">
+											<picture>
+												<source type="image/webp"
+													srcset="./assets/img/components/main-slider/img-1.webp">
+												<img src="./assets/img/components/main-slider/img-1.jpg" alt="">
+											</picture>
+										</div>
+										<!-- slide container -->
+										<div class="main-slider__slide-container container">
+											<div class="main-slider__slide-textBox">
+												<h1>Студия дизайна интерьера <br>
+													SDKE</h1>
+												<p>
+													Архитектурное дизайн-бюро полного цикла. <br>
+													Дизайн. Архитектура. Мебель. Ремонт.
+												</p>
+												<!-- messengers -->
+												<div class="msgr">
+													<a class="msgr__link msgr__link--viber"
+														href="https://msngr.link/vi/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--wp"
+														href="https://msngr.link/wa/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--tg"
+														href="https://msngr.link/tg/375291755007">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic">
+															</use>
+														</svg>
+													</a>
+													<a class="msgr__link msgr__link--phone" href="tel:+375291755007">
+														+375 (29) <b>175 50 07</b>
+													</a>
+												</div>
+												<div class="main-slider__slide-btns">
+													<button class="main-slider__slide-cons btn js-openModal"
+														type="button" data-type-modal="consultation"
+														aria-label="Получить консультацию">
+														Получить консультацию
+													</button>
+													<a class="main-slider__slide-count btn btn--light" href="#">
+														Рассчитать стоимость дизайн-проекта
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- pagination -->
+								<div class="main-slider__pagination-wrap ">
+									<div class="container">
+										<div class="slider-pagination"></div>
+									</div>
+								</div>
+							</div>
+							<!-- btn scroll -->
+							<a class="btn-scroll" href="#scroll-sect-1">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-down_tr"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- sketch wrapper -->
+				<div id="scroll-sect-1" class="sketch-wrap">
+					<!-- catalog cards -->
+					<div class="catalog-cards section">
+						<div class="catalog-cards__container container">
+							<!-- list link -->
+							<div class="catalog-cards__list">
+								<!-- catalog card -->
+								<div class="catalog-card">
+									<div class="catalog-card__img"
+										style="background-image: url(./assets/img/components/catalog-cards/img-1.png)">
+									</div>
+									<div class="catalog-card__content">
+										<div class="catalog-card__text">Дизайн квартир</div>
+										<a class="catalog-card__link" href="#"></a>
+										<span class="catalog-card__btn btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<!-- catalog card -->
+								<div class="catalog-card">
+									<div class="catalog-card__img"
+										style="background-image: url(./assets/img/components/catalog-cards/img-2.png)">
+									</div>
+									<div class="catalog-card__content">
+										<div class="catalog-card__text">Дизайн коммерческих помещений</div>
+										<a class="catalog-card__link" href="#"></a>
+										<span class="catalog-card__btn btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<!-- catalog card -->
+								<div class="catalog-card">
+									<div class="catalog-card__img"
+										style="background-image: url(./assets/img/components/catalog-cards/img-3.png)">
+									</div>
+									<div class="catalog-card__content">
+										<div class="catalog-card__text">Дизайн домов</div>
+										<a class="catalog-card__link" href="#"></a>
+										<span class="catalog-card__btn btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<!-- catalog card -->
+								<div class="catalog-card">
+									<div class="catalog-card__img"
+										style="background-image: url(./assets/img/components/catalog-cards/img-4.png)">
+									</div>
+									<div class="catalog-card__content">
+										<div class="catalog-card__text">Дизайн фасада</div>
+										<a class="catalog-card__link" href="#"></a>
+										<span class="catalog-card__btn btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- price block -->
+					<div class="prices-b section">
+						<div class="prices-b__container container flex-col">
+							<h2 class="title-1 section__title" data-aos="zoom-in">
+								Цены на <b>дизайн интерьера</b>
+							</h2>
+							<!-- price list -->
+							<div class="prices-b__list">
+								<!-- price card -->
+								<div class="price-card">
+									<div class="price-card__ic">
+										<svg>
+											<use xlink:href="./assets/img/icons/modules/price-card/sprite.svg#ic-1">
+											</use>
+										</svg>
+									</div>
+									<div class="price-card__head">
+										<p>Тариф <i>«ТЕХНО»</i></p>
+									</div>
+									<div class="price-card__body">
+										<div class="price-card__value">
+											15 $ <i>/&nbsp;м<sup>2</sup></i>&nbsp;*
+										</div>
+										<ul class="price-card__list">
+											<li>Позиция 156474 795776s dfffffsdf sdf8</li>
+											<li>Позиция 15647 47957768</li>
+											<li>Позиция 1564747957768</li>
+											<li>Позиция 1564747 957768</li>
+										</ul>
+									</div>
+								</div>
+								<!-- price card -->
+								<div class="price-card">
+									<div class="price-card__ic">
+										<svg>
+											<use xlink:href="./assets/img/icons/modules/price-card/sprite.svg#ic-2">
+											</use>
+										</svg>
+									</div>
+									<div class="price-card__head">
+										<p>Тариф <i>«релакс»</i></p>
+									</div>
+									<div class="price-card__body">
+										<div class="price-card__value">
+											33 $ <i>/&nbsp;м<sup>2</sup></i>&nbsp;*
+										</div>
+										<ul class="price-card__list">
+											<li>Позиция 156474 795776s dfffffsdf sdf8</li>
+											<li>Позиция 15647 47957768</li>
+											<li>Позиция 1564747957768</li>
+											<li>Позиция 1564747 957768</li>
+										</ul>
+									</div>
+								</div>
+								<!-- price card -->
+								<div class="price-card">
+									<div class="price-card__ic">
+										<svg>
+											<use xlink:href="./assets/img/icons/modules/price-card/sprite.svg#ic-3">
+											</use>
+										</svg>
+									</div>
+									<div class="price-card__head">
+										<p>Тариф <i>стандарт</i></p>
+									</div>
+									<div class="price-card__body">
+										<div class="price-card__value">
+											26 $ <i>/&nbsp;м<sup>2</sup></i>&nbsp;*
+										</div>
+										<ul class="price-card__list">
+											<li>Позиция 156474 795776s dfffffsdf sdf8</li>
+											<li>Позиция 15647 47957768</li>
+											<li>Позиция 1564747957768</li>
+											<li>Позиция 1564747 957768</li>
+											<li>Позиция 1564747 957768</li>
+										</ul>
+									</div>
+								</div>
+								<!-- price card -->
+								<div class="price-card">
+									<div class="price-card__ic">
+										<svg>
+											<use xlink:href="./assets/img/icons/modules/price-card/sprite.svg#ic-4">
+											</use>
+										</svg>
+									</div>
+									<div class="price-card__head">
+										<p>Тариф <i>Фасад</i></p>
+									</div>
+									<div class="price-card__body">
+										<div class="price-card__value">
+											620 $
+										</div>
+										<ul class="price-card__list">
+											<li>Позиция 156474 795776s dfffffsdf sdf8</li>
+											<li>Позиция 15647 47957768</li>
+											<li>Позиция 1564747957768</li>
+											<li>Позиция 1564747 957768</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- callback button -->
+							<button class="prices-b__btn section__btn btn js-openModal" type="button"
+								aria-label="Заказать звонок" data-type-modal="consultation">
+								Заказать звонок
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#support-ic"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<!-- sketch img container -->
+					<div class="sketch-container container-l">
+						<!-- sketch-img -->
+						<div class="sketch-img" data-aos="fade-up" data-aos-duration="3000"
+							data-aos-anchor-placement="bottom-bottom">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/plug.jpg">
+								<source type="image/webp" srcset="./assets/img/components/sketches/img-1.webp">
+								<img src="./assets/img/components/sketches/img-1.png" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<!-- sketch wrapper -->
+				<div class="sketch-wrap">
+					<!-- works block -->
+					<div class="works-b section">
+						<div class="works-b__container container flex-col">
+							<h2 class="title-1 section__title" data-aos="zoom-in">
+								Последние <b>выполненные работы</b>
+							</h2>
+							<div class="works-b__list">
+								<!-- work card -->
+								<div class="work-card">
+									<a class="work-card__link" href="#"></a>
+									<div class="work-card__plate">
+										33 м<sup>2</sup>
+									</div>
+									<div class="work-card__img">
+										<picture>
+											<source type="image/webp"
+												srcset="./assets/img/components/work-b/img-1.webp">
+											<img src="./assets/img/components/work-b/img-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="work-card__info">
+										<div class="work-card__title">
+											ДИЗАЙН ТРЁХКОМНАТНОЙ КВАРТИРЫ В СОВРЕМЕННОМ СТИЛЕ В ЖК ПИРС
+										</div>
+										<div class="work-card__text">
+											<p>
+												Диза́йн интерье́ра — отрасль дизайна, направленная на интерьер помещений
+												с целью обеспечить удобство и эстетически приятное взаимодействие среды
+												с людьми. Интерьерный дизайн сочетает в себе художественный и
+												промышленный дизайн.
+											</p>
+										</div>
+									</div>
+									<div class="work-card__bottom">
+										<div class="work-card__tag">
+											# дизайн трёхкомнатной квартиры
+										</div>
+										<span class="btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<!-- work card -->
+								<div class="work-card">
+									<a class="work-card__link" href="#"></a>
+									<div class="work-card__plate">
+										33 м<sup>2</sup>
+									</div>
+									<div class="work-card__img">
+										<picture>
+											<source type="image/webp"
+												srcset="./assets/img/components/work-b/img-1.webp">
+											<img src="./assets/img/components/work-b/img-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="work-card__info">
+										<div class="work-card__title">
+											ДИЗАЙН ТРЁХКОМНАТНОЙ КВАРТИРЫ В СОВРЕМЕННОМ СТИЛЕ В ЖК ПИРС
+										</div>
+										<div class="work-card__text">
+											<p>
+												Далеко-далеко за, словесными горами в стране гласных и согласных живут
+												рыбные тексты. Знаках решила грамматики он.
+											</p>
+										</div>
+									</div>
+									<div class="work-card__bottom">
+										<div class="work-card__tag">
+											# дизайн трёхкомнатной квартиры
+										</div>
+										<span class="btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<!-- work card -->
+								<div class="work-card">
+									<a class="work-card__link" href="#"></a>
+									<div class="work-card__plate">
+										33 м<sup>2</sup>
+									</div>
+									<div class="work-card__img">
+										<picture>
+											<source type="image/webp"
+												srcset="./assets/img/components/work-b/img-1.webp">
+											<img src="./assets/img/components/work-b/img-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="work-card__info">
+										<div class="work-card__title">
+											ДИЗАЙН ТРЁХКОМНАТНОЙ КВАРТИРЫ В СОВРЕМЕННОМ СТИЛЕ В ЖК ПИРС
+										</div>
+										<div class="work-card__text">
+											<p>
+												Диза́йн интерье́ра — отрасль дизайна, направленная на интерьер помещений
+												с целью обеспечить удобство и эстетически приятное взаимодействие среды
+												с людьми. Интерьерный дизайн сочетает в себе художественный и
+												промышленный дизайн.
+											</p>
+										</div>
+									</div>
+									<div class="work-card__bottom">
+										<div class="work-card__tag">
+											# дизайн трёхкомнатной квартиры
+										</div>
+										<span class="btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<!-- work card -->
+								<div class="work-card">
+									<a class="work-card__link" href="#"></a>
+									<div class="work-card__plate">
+										33 м<sup>2</sup>
+									</div>
+									<div class="work-card__img">
+										<picture>
+											<source type="image/webp"
+												srcset="./assets/img/components/work-b/img-1.webp">
+											<img src="./assets/img/components/work-b/img-1.jpg" alt="">
+										</picture>
+									</div>
+									<div class="work-card__info">
+										<div class="work-card__title">
+											ДИЗАЙН ТРЁХКОМНАТНОЙ КВАРТИРЫ В СОВРЕМЕННОМ СТИЛЕ В ЖК ПИРС
+										</div>
+										<div class="work-card__text">
+											<p>
+												Диза́йн интерье́ра — отрасль дизайна, направленная на интерьер помещений
+												с целью обеспечить удобство и эстетически приятное взаимодействие среды
+												с людьми. Интерьерный дизайн сочетает в себе художественный и
+												промышленный дизайн.
+											</p>
+										</div>
+									</div>
+									<div class="work-card__bottom">
+										<div class="work-card__tag">
+											# дизайн трёхкомнатной квартиры
+										</div>
+										<span class="btn-circ">
+											<svg>
+												<use xlink:href="./assets/img/icons/ui/sprite.svg#arr-right_tr"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- callback button -->
+							<button class="section__btn btn">
+								посмотреть портфолио
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#image-ic"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="advantages-b section">
+						<div class="advantages-b__container container">
+							<h2 class="title-1 section__title" data-aos="zoom-in">
+								Преимущества <b>SDKE</b>
+							</h2>
+							<div class="advantages-b__list-wrap flex">
+								<div class="advantages-b__list">
+									<!-- advantage card -->
+									<div class="advantage-card">
+										<div class="advantage-card__img">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages-b/sprite.svg#ic-1">
+												</use>
+											</svg>
+										</div>
+										<div class="advantage-card__text">
+											Преимущество <i>1</i>
+										</div>
+									</div>
+									<!-- advantage card -->
+									<div class="advantage-card">
+										<div class="advantage-card__img">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages-b/sprite.svg#ic-2">
+												</use>
+											</svg>
+										</div>
+										<div class="advantage-card__text">
+											Преимущество <i>1</i>
+										</div>
+									</div>
+									<!-- advantage card -->
+									<div class="advantage-card">
+										<div class="advantage-card__img">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages-b/sprite.svg#ic-1">
+												</use>
+											</svg>
+										</div>
+										<div class="advantage-card__text">
+											Преимущество <i>1</i>
+										</div>
+									</div>
+									<!-- advantage card -->
+									<div class="advantage-card">
+										<div class="advantage-card__img">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages-b/sprite.svg#ic-2">
+												</use>
+											</svg>
+										</div>
+										<div class="advantage-card__text">
+											Преимущество <i>1</i>
+										</div>
+									</div>
+									<!-- advantage card -->
+									<div class="advantage-card">
+										<div class="advantage-card__img">
+											<svg>
+												<use xlink:href="./assets/img/components/advantages-b/sprite.svg#ic-1">
+												</use>
+											</svg>
+										</div>
+										<div class="advantage-card__text">
+											Преимущество <i>1</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- sketch img container -->
+					<div class="sketch-container container-l">
+						<!-- sketch-img -->
+						<div class="sketch-img" style="right: 0; top: -120px;" data-aos="fade-up"
+							data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/plug.jpg">
+								<source type="image/webp" srcset="./assets/img/components/sketches/img-2.webp">
+								<img src="./assets/img/components/sketches/img-2.png" alt="">
+							</picture>
+						</div>
+						<!-- sketch-img -->
+						<div class="sketch-img" style="left: 0; bottom: -80px;" data-aos="fade-up"
+							data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/plug.jpg">
+								<source type="image/webp" srcset="./assets/img/components/sketches/img-3.webp">
+								<img src="./assets/img/components/sketches/img-3.png" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<!-- sketch wrapper -->
+				<div class="sketch-wrap">
+					<!-- comanda -->
+					<div class="band-b section">
+						<div class="band-b__container container">
+							<h2 class="title-1 section__title" data-aos="zoom-in">Наша <b>команда</b></h2>
+							<!-- slider wrapper -->
+							<div class="band-slider-wrap slider-wrap">
+								<!-- slider -->
+								<div class="band-slider swiper">
+									<div class="swiper-wrapper">
+										<!-- user -->
+										<div class="band-slider__slide user-card swiper-slide">
+											<div class="user-card__img">
+												<picture>
+													<source type="image/webp"
+														srcset="./assets/img/components/band-b/natali.webp">
+													<img src="./assets/img/components/band-b/natali.jpg" alt="">
+												</picture>
+											</div>
+											<div class="user-card__textBox">
+												<div class="user-card__name">Наталья Телеш</div>
+												<div class="user-card__post">3Д-визуализатор</div>
+												<div class="user-card__communications">
+													<!-- sci link -->
+													<a class="sci-link" href="#" target="_blank">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#insta">
+															</use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- user -->
+										<div class="band-slider__slide user-card swiper-slide">
+											<div class="user-card__img">
+												<picture>
+													<source type="image/webp"
+														srcset="./assets/img/components/band-b/anastasiya.webp">
+													<img src="./assets/img/components/band-b/anastasiya.jpg" alt="">
+												</picture>
+											</div>
+											<div class="user-card__textBox">
+												<div class="user-card__name">Анастасия Садака</div>
+												<div class="user-card__post">3Д-визуализатор</div>
+												<div class="user-card__communications">
+													<!-- sci link -->
+													<a class="sci-link" href="#" target="_blank">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#insta">
+															</use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+
+										<!-- user -->
+										<div class="band-slider__slide user-card swiper-slide">
+											<div class="user-card__img">
+												<picture>
+													<source type="image/webp"
+														srcset="./assets/img/components/band-b/anastasiya.webp">
+													<img src="./assets/img/components/band-b/anastasiya.jpg" alt="">
+												</picture>
+											</div>
+											<div class="user-card__textBox">
+												<div class="user-card__name">Елена Кожеурова</div>
+												<div class="user-card__post">Арт-директор</div>
+												<div class="user-card__communications">
+													<!-- sci link -->
+													<a class="sci-link" href="#" target="_blank">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#insta">
+															</use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+
+										<!-- user -->
+										<div class="band-slider__slide user-card swiper-slide">
+											<div class="user-card__img">
+												<picture>
+													<source type="image/webp"
+														srcset="./assets/img/components/band-b/antonina.webp">
+													<img src="./assets/img/components/band-b/antonina.jpg" alt="">
+												</picture>
+											</div>
+											<div class="user-card__textBox">
+												<div class="user-card__name">Антонина Стречень</div>
+												<div class="user-card__post">Руководитель проектов</div>
+												<div class="user-card__communications">
+													<!-- sci link -->
+													<a class="sci-link" href="#" target="_blank">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#insta">
+															</use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- user -->
+										<div class="band-slider__slide user-card swiper-slide">
+											<div class="user-card__img">
+												<picture>
+													<source type="image/webp"
+														srcset="./assets/img/components/band-b/elena.webp">
+													<img src="./assets/img/components/band-b/elena.jpg" alt="">
+												</picture>
+											</div>
+											<div class="user-card__textBox">
+												<div class="user-card__name">Елена Бармина</div>
+												<div class="user-card__post">Ведущий дизайнер
+												</div>
+												<div class="user-card__communications">
+													<!-- sci link -->
+													<a class="sci-link" href="#" target="_blank">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#insta">
+															</use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- user -->
+										<div class="band-slider__slide user-card swiper-slide">
+											<div class="user-card__img">
+												<picture>
+													<source type="image/webp"
+														srcset="./assets/img/components/band-b/natali.webp">
+													<img src="./assets/img/components/band-b/natali.jpg" alt="">
+												</picture>
+											</div>
+											<div class="user-card__textBox">
+												<div class="user-card__name">Наталья Телеш</div>
+												<div class="user-card__post">3Д-визуализатор</div>
+												<div class="user-card__communications">
+													<!-- sci link -->
+													<a class="sci-link" href="#" target="_blank">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#insta">
+															</use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- user -->
+										<div class="band-slider__slide user-card swiper-slide">
+											<div class="user-card__img">
+												<picture>
+													<source type="image/webp"
+														srcset="./assets/img/components/band-b/anastasiya.webp">
+													<img src="./assets/img/components/band-b/anastasiya.jpg" alt="">
+												</picture>
+											</div>
+											<div class="user-card__textBox">
+												<div class="user-card__name">Анастасия Садака</div>
+												<div class="user-card__post">3Д-визуализатор</div>
+												<div class="user-card__communications">
+													<!-- sci link -->
+													<a class="sci-link" href="#" target="_blank">
+														<svg>
+															<use xlink:href="./assets/img/icons/ui/sprite.svg#insta">
+															</use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- gallery -->
+							<div class="band-b__gallery">
+								<a class="band-b__gallery-item" href="./assets/img/components/band-b/gallery/img-1.jpg"
+									data-fslightbox="bandGallery">
+									<img src="./assets/img/components/band-b/gallery/img-1.jpg" alt="">
+								</a>
+								<a class="band-b__gallery-item" href="./assets/img/components/band-b/gallery/img-2.jpg"
+									data-fslightbox="bandGallery">
+									<img src="./assets/img/components/band-b/gallery/img-2.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- reviews -->
+					<div class="reviews-b section">
+						<div class="reviews-b__container container">
+							<h2 class="title-1 section__title" data-aos="zoom-in">Отзывы</h2>
+						</div>
+					</div>
+					<!-- text block -->
+					<div class="seo-text-b section">
+						<div class="container">
+							<h2 class="title-1 section__title" data-aos="zoom-in">Seo-<b>текст</b></h2>
+							<div class="seo-text-b__text col-count-2 col-count-sm-1 text text--air">
+								<p>
+									На первый взгляд может показаться, что в разработке дизайна нет ничего сложного, и с
+									такой задачей можно справиться самостоятельно. На деле же выясняется, что в этой
+									работе есть масса нюансов, которые невозможно предусмотреть непрофессионалу.
+								</p>
+								<p>
+									Дизайнер интерьера не просто <a href="#">рисует красивую картинку</a>, он точно
+									знает, как лучше
+									организовать пространство, какие материалы стоит выбирать для конкретной задачи,
+									какие приемы использовать для устранения недостатков помещения, как сделать так,
+									чтобы интерьер был не только стильным, но и комфортным.
+								</p>
+								<p>
+									Если вы не хотите столкнуться с сюрпризом из разряда "ожидание - реальность", вам
+									обязательно нужно обратиться за разработкой дизайн-проекта к профессионалам, то есть
+									к нам!
+								</p>
+								<p>
+									На первый взгляд может показаться, что в разработке дизайна нет ничего сложного, и с
+									такой задачей можно справиться самостоятельно. На деле же выясняется, что в этой
+									работе есть масса нюансов, которые невозможно предусмотреть непрофессионалу.
+								</p>
+								<h3>Заголовок h3</h3>
+								<p>
+									Какие приемы использовать для устранения недостатков помещения, как сделать так,
+									чтобы интерьер был не только стильным, но и комфортным.
+								</p>
+								<p>
+									Если вы не хотите столкнуться с сюрпризом из разряда "ожидание - реальность", вам
+									обязательно нужно обратиться за разработкой дизайн-проекта к профессионалам, то есть
+									к нам!
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- sketch img container -->
+					<div class="sketch-container container-l">
+						<!-- sketch-img -->
+						<div class="sketch-img" style="right: 0; top: 460px;" data-aos="fade-up"
+							data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/plug.jpg">
+								<source type="image/webp" srcset="./assets/img/components/sketches/img-4.webp">
+								<img src="./assets/img/components/sketches/img-4.png" alt="">
+							</picture>
+						</div>
+						<!-- sketch-img -->
+						<div class="sketch-img" style="left: 0; bottom: -150px;" data-aos="fade-up"
+							data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/plug.jpg">
+								<source type="image/webp" srcset="./assets/img/components/sketches/img-5.webp">
+								<img src="./assets/img/components/sketches/img-5.png" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<!-- sketch wrapper -->
+				<div class="sketch-wrap">
+					<!-- partners block -->
+					<div class="partners-b section">
+						<div class="partners-b__container container">
+							<h2 class="title-1 section__title" data-aos="zoom-in">Наши <b>партнёры</b></h2>
+							<div class="partners-b__list">
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/edelis.jpg" alt="edelis">
+								</div>
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/dreamland.jpg" alt="dreamland">
+								</div>
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/bauhaus.jpg" alt="bauhaus">
+								</div>
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/svarok.jpg" alt="Сварок мастер">
+								</div>
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/portu.jpg" alt="Порту">
+								</div>
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/trio.jpg" alt="Трио">
+								</div>
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/keramika.jpg" alt="Фоял керамика">
+								</div>
+								<!-- item -->
+								<div class="partners-b__item">
+									<img src="./assets/img/components/partners-b/edelis.jpg" alt="edelis">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- sketch img container -->
+					<div class="sketch-container container-l">
+						<!-- sketch-img -->
+						<div class="sketch-img" style="right: 0; bottom: -150px;" data-aos="fade-up"
+							data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom">
+							<picture>
+								<source media="(max-width: 768px)" srcset="./assets/img/plug.jpg">
+								<source type="image/webp" srcset="./assets/img/components/sketches/img-6.webp">
+								<img src="./assets/img/components/sketches/img-6.png" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__container container">
+			<!-- footer sidebar -->
+			<div class="footer__sidebar">
+				<!-- logo -->
+				<a class="footer__logo logo" href="#">
+					<img src="./assets/img/logo.png" alt="logotip">
+				</a>
+				<p>
+					Студия дизайна Елены Кожеуровой &copy; 2013 - 2021
+				</p>
+				<p> УНП 193312909</p>
+				<p>
+					<!-- sci link -->
+					<a class="sci-link" href="#" target="_blank">
+						<svg>
+							<use xlink:href="./assets/img/icons/ui/sprite.svg#insta"></use>
+						</svg>
+					</a>
+				</p>
+			</div>
+			<!-- footer body -->
+			<div class="footer__body">
+				<!-- footer top -->
+				<div class="footer__top">
+					<!-- menu -->
+					<ul class="footer__menu  menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#">ДИЗАЙН КВАРТИР</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">ДИЗАЙН ДОМОВ</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								ДИЗАЙН КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								<span>
+									РЕМОНТ ПОД КЛЮЧ
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- footer bottom -->
+				<div class="footer__middle">
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<!-- messengers -->
+						<p class="msgr">
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/375291755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/375291755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/375291755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--phone" href="tel:+375291755007">
+								+375 (29) <b>175 50 07</b>
+							</a>
+						</p>
+						<p class="msgr">
+							<a class="msgr__link msgr__link--viber" href="https://msngr.link/vi/375293755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#viber-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--wp" href="https://msngr.link/wa/375293755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#wp-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--tg" href="https://msngr.link/tg/375293755007">
+								<svg>
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#tg-ic"></use>
+								</svg>
+							</a>
+							<a class="msgr__link msgr__link--phone" href="tel:+375293755007">
+								+375 (29) <b>375 50 07</b>
+							</a>
+						</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<!-- firm info -->
+						<p>
+							<a class="firm-info firm-info--phone" href="mailto:info@sdke.by">
+								<svg class="firm-info__ic">
+									<use xlink:href="./assets/img/icons/ui/sprite.svg#mail-ic"></use>
+								</svg>
+								info@sdke.by
+							</a>
+						</p>
+						<!-- firm info -->
+						<p class="firm-info firm-info--clock">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/ui/sprite.svg#clock-ic"></use>
+							</svg>
+							пн.-пт. 9:00-18:00
+						</p>
+					</div>
+					<!-- middle col -->
+					<div class="footer__middle-col">
+						<!-- firm info -->
+						<p class="firm-info firm-info--clock">
+							<svg class="firm-info__ic">
+								<use xlink:href="./assets/img/icons/ui/sprite.svg#loc-ic"></use>
+							</svg>
+							г.Минск, ул. Франциска Скорины, <br> д.8, офис №50
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<a class="ArtBro" href="https://cweb.by/" target="_blank">
+					Разработка и продвижение cweb
+				</a>
+			</div>
+		</div>
+	</footer>
+	<!-- fslightbox js -->
+	<script src="assets/js/libraries/fslightbox.js"></script>
+	<!-- swiper js -->
+	<script src="assets/js/libraries/swiper-bundle.min.js"></script>
+	<!-- aos js -->
+	<script src="assets/js/libraries/aos.js"></script>
+	<!-- aos js -->
+	<script src="assets/js/libraries/inputMask.min.js"></script>
+	<!-- swiper js -->
+	<script src="assets/js/libraries/swiper-bundle.min.js"></script>
+	<!-- main slider -->
 	<script src="assets/js/main.js"></script>
 </body>
 
